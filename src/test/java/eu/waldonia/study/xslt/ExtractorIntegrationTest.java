@@ -54,16 +54,27 @@ public class ExtractorIntegrationTest {
 	public void shouldReturnPersonDetails() {
 		List<Map<String,Object>> results = extractor.getPersonDetails();
 		assertNotNull(results);
-		assertEquals(9,results.size());
+		assertEquals(11,results.size());
 		for (Map<String, Object> cols : results) {
 			assertNotNull(cols);
-			assertEquals(new Integer(1),cols.get("id"));
-			assertEquals("Sid Haniff",cols.get("name"));
-			assertEquals("1966-04-13",cols.get("birthdate"));
-			assertEquals("GB",cols.get("nationality"));
-			checkAddress(cols.get("address").toString());
-			checkPostcode(cols.get("postcode").toString());
+			if (cols.get("id").equals(1)) {
+				assertEquals("Alice",cols.get("name"));
+				assertEquals("GB",cols.get("nationality"));
+				checkAddress(cols.get("address").toString());
+				checkPostcode(cols.get("postcode").toString());
+			}
+			else if (cols.get("id").equals(2)) {
+				assertEquals("Bob",cols.get("name"));
+				assertEquals("GB",cols.get("nationality"));
+				checkAddress(cols.get("address").toString());
+				checkPostcode(cols.get("postcode").toString());
+			}
+			else {
+				fail("Unexpected item in bagging area");
+			}
+
 		}
+		
 		
 		postcodes.values().forEach(found -> assertTrue(found));
 		addresses.values().forEach(found -> assertTrue(found));

@@ -23,13 +23,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class Extractor {
 
-	private static final String SQL = "SELECT p.id, p.name, p.birthdate, p.nationality, a.address_1, a.postcode FROM person p, address a WHERE a.person_id = p.id";
+	private static final String SQL = "SELECT p.id, p.name, p.nationality, a.address_1, a.postcode FROM person p, address a WHERE a.person_id = p.id ORDER BY p.id";
 
 	private static final Logger LOG = LoggerFactory.getLogger(Extractor.class);
 	
 	@Autowired
 	JdbcTemplate jdbc;
 
+	
+	
+	/**
+	 * TODO change me to return a map of a list of people
+	 * @return
+	 */
 	public List<Map<String, Object>> getPersonDetails() {
 				
 		LOG.info("Executing query: "+SQL);
@@ -46,7 +52,6 @@ public class Extractor {
 					Map<String, Object> columns = new HashMap<String, Object>();
 					columns.put("id", rs.getInt("id"));
 					columns.put("name", rs.getString("name"));
-					columns.put("birthdate", rs.getString("birthdate"));
 					columns.put("nationality", rs.getString("nationality"));
 					columns.put("address", rs.getString("address_1"));
 					columns.put("postcode", rs.getString("postcode"));

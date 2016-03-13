@@ -1,7 +1,6 @@
 CREATE TABLE person (
 	id INTEGER NOT NULL,
 	name VARCHAR(20),
-	birthdate VARCHAR(10),
 	nationality VARCHAR(2)
 );
 
