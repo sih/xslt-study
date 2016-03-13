@@ -149,6 +149,8 @@ An [XSL Transformer](https://github.com/sih/xslt-study/blob/master/src/main/java
 
 ```
 
+The full flow is run as a test in the [shouldProcessFullFlow](https://github.com/sih/xslt-study/blob/master/src/test/java/eu/waldonia/study/xslt/RdbtransformApplicationTests.java#L47-L63) test.
+
 ### Libraries
 
 This uses an embedded HSQL database for the data and Saxonica Home Edition for the XSL Transformation.
