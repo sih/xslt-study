@@ -18,7 +18,7 @@ public class RdbtransformApplicationTests {
 	Extractor extractor;
 	
 	@Autowired
-	GenericXmlTransformer rdbToXml;
+	TableXmlConverter rdbToXml;
 
 	
 	@Test

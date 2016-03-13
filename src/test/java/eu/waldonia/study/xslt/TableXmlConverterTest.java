@@ -37,12 +37,12 @@ import org.xml.sax.SAXException;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = RdbTransformApplication.class)
 
-public class GenericXmlTransformerTest {
+public class TableXmlConverterTest {
 	
-	private static final Logger LOG = LoggerFactory.getLogger(GenericXmlTransformer.class);
+	private static final Logger LOG = LoggerFactory.getLogger(TableXmlConverter.class);
 
 	@Autowired
-	GenericXmlTransformer rdbToXml;
+	TableXmlConverter rdbToXml;
 
 	private List<Map<String, Object>> table;
 	private String xml;

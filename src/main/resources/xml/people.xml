@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+  <person>
+    <id>1</id>
+    <name>Alice</name>
+    <addresses>
+      <address>
+        <line1>39 Woodland Rd</line1>
+        <postcode>SE19 1NU</postcode>
+      </address>
+      <address>
+        <line1>34 Dart Rd</line1>
+        <postcode>GU14 9PB</postcode>
+      </address>
+      <address>
+        <line1>Cedar House</line1>
+        <postcode>CT6 6LA</postcode>
+      </address>
+      <address>
+        <line1>112A High St</line1>
+        <postcode>CT6 5JY</postcode>
+      </address>
+      <address>
+        <line1>12 Rushmead Close</line1>
+        <postcode>CT2 7RP</postcode>
+      </address>
+      <address>
+        <line1>25 Cardigan St</line1>
+        <postcode>OX2 6BP</postcode>
+      </address>
+      <address>
+        <line1>1 Bulstrode Rd</line1>
+        <postcode>TW3 3AP</postcode>
+      </address>
+      <address>
+        <line1>19 Cecil Rd</line1>
+        <postcode>TW3 1NU</postcode>
+      </address>
+      <address>
+        <line1>13C Comeragh Rd</line1>
+        <postcode>W14 9HP</postcode>
+      </address>
+      <address>
+        <line1>39A Dorothy Rd</line1>
+        <postcode>SW11 2JJ</postcode>
+      </address>
+    </addresses>
+  </person>
+  <person>
+    <id>2</id>
+    <name>Bob</name>
+    <addresses>
+      <address>
+        <line1>39A Dorothy Rd</line1>
+        <postcode>SW11 2JJ</postcode>
+      </address>
+    </addresses>
+  </person>
+</people>

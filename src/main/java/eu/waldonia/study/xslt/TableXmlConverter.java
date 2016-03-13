@@ -13,10 +13,10 @@ import org.springframework.stereotype.Component;
  * @author sih
  */
 @Component
-public class GenericXmlTransformer {
+public class TableXmlConverter {
 	
 	private static final String DIRECTIVE = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
-	private static final Logger LOG = LoggerFactory.getLogger(GenericXmlTransformer.class);
+	private static final Logger LOG = LoggerFactory.getLogger(TableXmlConverter.class);
 	
 	public String makeGenericXml(List<Map<String,Object>> table) {
 		StringBuffer buffy = new StringBuffer(DIRECTIVE);
