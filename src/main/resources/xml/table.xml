@@ -15,7 +15,7 @@
 				<value>GB</value>
 			</col>
 			<col>
-				<namey>name</name>
+				<name>name</name>
 				<value>Sid Haniff</value>
 			</col>
 			<col>
@@ -236,4 +236,5 @@
 			</col>
 		</row>
 	</rows>
+</resultSet>
 </resultSet>
